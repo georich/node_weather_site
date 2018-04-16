@@ -4,16 +4,25 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server/server.js",
+    "test": "jest --verbose server/**/*.test.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.18.0",
     "body-parser": "^1.18.2",
+    "bulma": "^0.7.0",
     "express": "^4.16.3",
     "hbs": "^4.0.1"
   },
   "devDependencies": {
-    "nodemon": "^1.17.3"
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-jest": "^21.15.0",
+    "jest": "^22.4.3",
+    "nodemon": "^1.17.3",
+    "supertest": "^3.0.0"
   }
 }
